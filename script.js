@@ -132,7 +132,7 @@ async function copyPassw(){
     {
         copyBtn.classList.add('hide');
         await navigator.clipboard.writeText(displayPassw.value);
-        copyMsg.innerHTML='Copied!';
+        copyMsg.innerHTML='✔';
         await displayMsg();
     }
 }
