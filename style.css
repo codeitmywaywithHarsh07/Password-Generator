@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik&display=swap');
+
+:root{
+    --darkColor:#f55a42;
+    --lightColor:#FCEDDA;
+    --green:rgba(245, 245, 245, 0.73);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+body{
+    background-color: var(--darkColor);
+}
+
+.wrapper{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    gap: 100px;
+    flex-direction: column;
+}
+
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.main-container{
+    flex-direction: column;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80vmin;
+    background-color: var(--lightColor);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.252);
+    margin: 100px 0px;
+}
+
+
+.main-container h1{
+    text-align: center;
+    margin: 10px;
+    color: var(--darkColor);
+    margin-bottom:40px;
+
+}
+
+.heading{
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    font-size: 2rem;
+    font-family: 'Belanosima', sans-serif;
+    background-color: var(--lightColor);
+    user-select: none;
+}
+
+.display{
+    width: 90%;
+    font-size: 1.3rem;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Rubik', sans-serif;
+    height: 50px;
+}
+
+.display_container{
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    flex-wrap: nowrap;
+    box-shadow: 0.5px 0.5px 4px black;
+}
+
+.display-length{
+    border: 2px solid black;
+    padding: 5px 15px;
+    text-shadow: 0.2px 0.2px 1px black;
+}
+
+.copy-button{
+    background-color: white;
+    border: none;
+    outline: none;
+    margin: 0px 20px 0px 0px;
+    font-size: 1rem;
+}
+
+.round-indicator{
+    width: 100%;
+    /* background-color: black; */
+    height: 2px;
+}
+
+#copied{
+    margin-right: 10px;
+}
+
+.length{
+    justify-content: space-between;
+    margin: 40px;
+    font-size: 1.2rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 800;
+    
+}
+
+.slider{
+    margin: 50px auto;
+    width: 80%;
+
+}
+
+
+
+#mySlider{
+    width: 100%;
+    background-color: var(--darkColor);
+}
+
+
+.check-boxes{
+    margin: 40px;
+    font-size: 1.2rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 800;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.submit{
+    font-size: 1.2rem;
+    padding: 6px;
+    border-radius:20px;
+    border: none;
+    background-color: #f55a42;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    margin: 0px auto;
+}
+
+/* JS Needs Class */
+
+.hide{
+    display: none;
+}

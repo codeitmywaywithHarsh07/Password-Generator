@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator | Harsh Tripathi</title>
+    <script src="https://kit.fontawesome.com/78a0b08bc1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- <div class="heading flex">SafePassw</div> -->
+
+    <div class="wrapper flex">
+
+        <div class="flex heading">
+            SafePassw
+            <i class="fa-solid fa-2xs fa-star-of-life" style="color: #030303;"></i>
+            <i class="fa-solid fa-2xs fa-star-of-life" style="color: #030303;"></i>
+            <i class="fa-solid fa-2xs fa-star-of-life" style="color: #030303;"></i>
+        </div>
+
+        <div class="flex main-container">
+
+            <h1>Password Generator</h1>
+
+            <div class="flex display_container">
+
+                <input readonly class="display" >
+
+                <div class="copybtnmsg">
+                    <span id="copied"></span>
+                    <button class="copy-button">
+                        <i id="copy" onclick="copyPassw()" class="copyicon fa-solid fa-clone"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="round-indicator"></div>
+
+            <div class="input-section">
+
+                <div class="slider">
+    
+                    <input type="range" name="my-slider" id="mySlider" min="1" max="20" >
+    
+                </div>
+
+                <div class="flex length">
+                    <p>Password Length</p>
+                    <span class="display-length">0</span>
+                </div>
+                
+                <hr noshade="3" color="lightgrey" width="60%" style="margin: 0px auto;">
+
+    
+                <div class="flex check-boxes">
+    
+                    <div class="upper">
+                        <input type="checkbox" name="uppercase" id="uppercase">
+                        <label for="uppercase">Include Uppercase Letters</label>
+                    </div>
+                    <div class="lower">
+                        <input type="checkbox" name="lowercase" id="lowercase">
+                        <label for="lowercase">Include Lowercase Letters</label>
+                    </div>
+                    <div class="num">
+                        <input type="checkbox" name="numbers" id="numbers">
+                        <label for="numbers">Include Numbers</label>
+                    </div>
+                    <div class="symb">
+                        <input type="checkbox" name="symbols" id="symbols">
+                        <label for="symbols">Include Symbols</label>
+                    </div>
+    
+                </div>
+    
+    
+                <button class="submit flex" onclick="newPassw()">GENERATE PASSWORD</button>
+    
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
